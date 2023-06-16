@@ -1,0 +1,57 @@
+<HTML>
+    <HEAD>
+        <TITLE>Admission Form</TITLE>
+    </HEAD>
+        <BODY>
+            <BODY BGCOLOR="#EEFFEE">
+        <STYLE>
+            .img-container {
+                text-align: center ;
+            }
+        </STYLE>
+            <div class="img-container">
+            <img src="img/clg header.jpg"style="width:90%; height: auto;"alt="clg header">
+        <HEADER>
+            <H1><p style="text-align:center;">Admission Form</p></H1>
+        </HEADER>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="text" id="gender" name="gender"><br>
+            <label for="dob">DoB:</label><br>
+            <input type="text" id="dob" name="dob"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="nation">Nationality:</label><br>
+            <input type="text" id="nation" name="nation"><br>
+            <label for="stream">Stream (HSC):</label><br>
+            <input type="text" id="stream" name="stream"><br>
+            <label for="course">Course (Bifocal Subject):</label><br>
+            <input type="text" id="course" name="course"><br>
+            
+            <p>Choose your preferred stream</p>
+            <input type="radio" id="stream" name="stream" value="Science">
+            <label for="stream">Science</label><br>
+            <input type="radio" id="stream" name="stream" value="Commerce">
+            <label for="stream">Commerce</label><br>
+
+		    <br>
+	
+            <label for="course">Choose your preferred course:</label>
+            <select name="course" id="course">
+                <option value="mme">MME</option>
+                <option value="comp">COMP</option>
+                <option value="aiml">AIML</option>
+                <option value="mech">MECH</option>
+                <option value="cse">CSE</option>
+                <option value="aids">AI&DS</option>
+            </select>
+            <br></br>
+            <input type="button" value="Submit" id="submit">
+        </form>
+        </div>   
+    </BODY>
+</HTML>

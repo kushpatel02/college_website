@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>College Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, intial-scale=1">
+        <style>
+            .one{
+                box-sizing: border-box;
+            }
+
+            .img-container {
+                text-align: center;
+            }
+
+            .body{
+                margin: 0;
+            }
+
+            /* style the header */
+            .header{
+                background-color: orangered;
+                padding: 20px;
+                font-size: 2vw;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            .multicolortext{
+                background-image: linear-gradient(to left, violet, indigo, orange);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            /*Style the top navigation bar*/
+            .topnav{
+                overflow: hidden;
+                background-color: #000000;
+            }
+
+            /*Style the topnav links*/
+            .topnav a{
+                float: left;
+                display: block;
+                color: hotpink;
+                text-align: center;
+                padding: 14px 123px;
+                text-decoration: none;
+            }
+
+            /*Change color on hover*/
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+
+            /*Create three equal columns that floats next to each other*/
+            .column{
+                float: left;
+                width: 30%;
+                padding: 15px;
+            }
+
+            /*Clear float after column*/
+            .row::after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+
+            /*Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
+            @media screen and (max-width:600px){
+                .column{
+                    background-color: rgb(145, 181, 255);
+                    width: 33.33%;
+                }
+            }
+
+            .footer{
+                background-color: rgb(141, 134, 245);
+                padding: 5px;
+                text-align: center;
+            }
+            .flex-container{
+                    display: flex;
+                    background-color: black;
+                    justify-content: space-around;
+                }
+            .flex-container>div{
+                    background-color: blueviolet;
+                    
+                    margin: 10px;
+                    padding: 20px;
+                    font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <body bgcolor="#5fb2e1">
+        
+    
+        <div class="img-container">
+            <img src="img/clg header.jpg"style="width:90%; height: auto;"alt="clg header">
+        </div>
+    
+
+        <div class="header">
+            <h1>Thakur College of Engineering and Technology</h1>
+        </div>
+    <!--
+        <div class="topnav">
+            <a href="#">HOME</a>
+            <a href="admission_final.html">ADMISSION</a>
+            <a href="#">ACADEMICS</a>
+            <a href="#">ERP</a>
+        </div>
+    -->
+       
+        <div class="flex-container">
+            <div><a href="index.html">HOME</div>
+            <div> <a href="admission_form.html">ADMISSION</div></a>
+            <div> <a href="academics.html"></a>ACADEMICS</div>
+            <div> <a href="erp_form.html">ERP</div>
+        </div>
+    
+        <div class="row">
+
+            <div class="column">
+                <h2>Visions</h2>
+                <p>"Thakur College of Engineering and Technology will excel in Technical Education to become an internationally renowned premier Institute of Engineering and Technology"</p>
+            </div>
+
+            <div class="column">
+                <h2>Mission</h2>
+                <p>"To provide state-of-the-art infrastructure and right academic ambience for developing professional skills as well as an environment for growth of leadership and managerial skills to students which will make them competent engineers to deliver quality results in industry"</p>
+            </div>
+
+            <div class="column">
+                <h2>Beliefs</h2>
+                <p>"Education is the manifestation of perfection already existing in man."</p>
+                <p>"Work is Worship", "Cleanliness is next to Godliness"</p>
+            </div>
+            
+        </div>
+
+    <!--
+        <div class="body">
+            <h3>Kandivali, Mumbai</h3>
+        </div>
+
+        <h1>
+            <span class="multicolortext">Thakur College of Engineering and Technology</span>
+        </h1>
+    -->
+
+    <br></br>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+        
+    </body>
+</html>
